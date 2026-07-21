@@ -1,0 +1,243 @@
+{
+  "objects": [
+    {
+      "id": "emerald",
+      "name": "Emerald Isle",
+      "type": "planet",
+      "description": "A lush green planet teeming with flora, featuring cascading waterfalls and drifting clouds.",
+      "scientificFacts": [
+        "Planets with high oxygen content and dense vegetation often reflect green wavelengths intensely.",
+        "A strong magnetic field is required to protect such biospheres from solar winds."
+      ],
+      "lore": "The Emerald Isle was one of the first worlds seeded by the Architect to test the viability of organic life in this sector.",
+      "radius": "6,371 km",
+      "color": "Green/Teal",
+      "temperature": "22°C",
+      "gravity": "1.0 G",
+      "interestingFacts": "It rains upward near the primary waterfall due to localized gravity anomalies.",
+      "relatedObjects": ["nexus", "comet-alpha"],
+      "suggestedQuestions": [
+        "How was this planet formed?",
+        "Could humans live here?",
+        "Why is it unique?"
+      ]
+    },
+    {
+      "id": "forge",
+      "name": "Forge Planet",
+      "type": "planet",
+      "description": "A molten world dominated by a massive supervolcano and glowing lava rivers.",
+      "scientificFacts": [
+        "Volcanic worlds are typically very young or orbit a gas giant, enduring extreme tidal heating.",
+        "Lava rivers indicate a very thin crust and high internal radiogenic heating."
+      ],
+      "lore": "The Forge is the Architect's cosmic foundry, where heavy elements and glowing project crystals are forged in the fires of creation.",
+      "radius": "4,200 km",
+      "color": "Red/Orange",
+      "temperature": "1200°C",
+      "gravity": "1.4 G",
+      "interestingFacts": "The project crystals scattered here contain pure data compressed into physical form.",
+      "relatedObjects": ["pulsar-1"],
+      "suggestedQuestions": [
+        "What fuels the volcano?",
+        "Are the crystals natural?",
+        "How hot is the surface?"
+      ]
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean World",
+      "type": "planet",
+      "description": "A deep blue water world inhabited by glowing jellyfish and swimming whales.",
+      "scientificFacts": [
+        "Ocean worlds, or hycean planets, are prime candidates for finding extraterrestrial marine life.",
+        "Bioluminescence is common in deep-sea creatures to attract prey or communicate."
+      ],
+      "lore": "A sanctuary of knowledge, where the Architect's memories swim like whales beneath the waves.",
+      "radius": "8,100 km",
+      "color": "Blue",
+      "temperature": "14°C",
+      "gravity": "1.1 G",
+      "interestingFacts": "The floating skill bubbles are actual concentrated pockets of technical knowledge.",
+      "relatedObjects": ["nexus"],
+      "suggestedQuestions": [
+        "Is there a sea floor?",
+        "What are the glowing bubbles?",
+        "How do the whales survive?"
+      ]
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal Moon",
+      "type": "moon",
+      "description": "A jagged icy moon wrapped in a cracked crust, enveloped in a falling snowstorm and a multi-colored Aurora.",
+      "scientificFacts": [
+        "Auroras are caused by the interaction of solar wind with a strong magnetic field and atmospheric gases.",
+        "Ice moons often hide subsurface oceans heated by tidal friction."
+      ],
+      "lore": "The crystal spires hold the frozen echoes of past civilizations that the Architect attempted to save.",
+      "radius": "2,400 km",
+      "color": "Ice Blue/White",
+      "temperature": "-180°C",
+      "gravity": "0.16 G",
+      "interestingFacts": "The snow here falls upward during certain orbital alignments.",
+      "relatedObjects": ["emerald"],
+      "suggestedQuestions": [
+        "What causes the aurora?",
+        "Is there liquid water beneath?",
+        "Why is the crust cracked?"
+      ]
+    },
+    {
+      "id": "singularity",
+      "name": "Singularity",
+      "type": "black_hole",
+      "description": "A supermassive gravitational distortion with a swirling accretion disk.",
+      "scientificFacts": [
+        "A black hole's gravity is so strong that not even light can escape its event horizon.",
+        "The bright ring is the accretion disk—superheated gas swirling inward at relativistic speeds."
+      ],
+      "lore": "The gateway to the Architect's personal domain. Only those who master the chaos of code can pass through.",
+      "radius": "Unknown",
+      "color": "Black/Orange",
+      "temperature": "Millions of degrees (disk)",
+      "gravity": "Infinite at singularity",
+      "interestingFacts": "Time slows down the closer you get to it.",
+      "relatedObjects": ["quasar-1"],
+      "suggestedQuestions": [
+        "Can light escape?",
+        "What happens beyond the event horizon?",
+        "Is time different near it?"
+      ]
+    },
+    {
+      "id": "comet-alpha",
+      "name": "Comet Alpha",
+      "type": "comet",
+      "description": "A fast-moving icy body leaving a bright tail as it travels through the system.",
+      "scientificFacts": [
+        "Comet tails are formed by solar radiation vaporizing the comet's icy nucleus.",
+        "The tail always points away from the primary star, regardless of the comet's direction of travel."
+      ],
+      "lore": "Comet Alpha is an ancient messenger carrying primordial stardust from the dawn of this universe.",
+      "radius": "12 km",
+      "color": "Cyan/White",
+      "temperature": "-220°C",
+      "gravity": "Negligible",
+      "interestingFacts": "Its orbit takes exactly 1,000 years to complete.",
+      "relatedObjects": ["emerald"],
+      "suggestedQuestions": [
+        "Where is this comet going?",
+        "What is the tail made of?",
+        "How old is it?"
+      ]
+    },
+    {
+      "id": "comet-beta",
+      "name": "Comet Beta",
+      "type": "comet",
+      "description": "A slow-drifting comet from the outer edges of the cosmic void.",
+      "scientificFacts": [
+        "Short-period comets originate from the Kuiper Belt, while long-period ones come from the Oort Cloud."
+      ],
+      "lore": "Beta is a stray fragment of a destroyed world, preserved in ice.",
+      "radius": "8 km",
+      "color": "Cyan",
+      "temperature": "-250°C",
+      "gravity": "Negligible",
+      "interestingFacts": "It carries traces of unknown elements.",
+      "relatedObjects": [],
+      "suggestedQuestions": [
+        "Where did it come from?",
+        "Will it ever stop?",
+        "What elements are inside?"
+      ]
+    },
+    {
+      "id": "comet-gamma",
+      "name": "Comet Gamma",
+      "type": "comet",
+      "description": "A highly volatile comet passing perilously close to the central core.",
+      "scientificFacts": [
+        "Sun-grazing comets often break apart due to intense tidal forces and solar heat."
+      ],
+      "lore": "Gamma glows with the fury of a forgotten star's core.",
+      "radius": "15 km",
+      "color": "Cyan/Blue",
+      "temperature": "-200°C",
+      "gravity": "Negligible",
+      "interestingFacts": "It is visibly outgassing heavily on its sunward side.",
+      "relatedObjects": [],
+      "suggestedQuestions": [
+        "Will it collide with anything?",
+        "Why is it so bright?",
+        "How fast is it moving?"
+      ]
+    },
+    {
+      "id": "pulsar-1",
+      "name": "Pulsar Alpha",
+      "type": "pulsar",
+      "description": "A rapidly rotating neutron star emitting intense beams of electromagnetic radiation.",
+      "scientificFacts": [
+        "Pulsars are the incredibly dense remnants of massive stars that collapsed in a supernova.",
+        "Their rotation can be so precise they rival atomic clocks."
+      ],
+      "lore": "The Architect uses Pulsar Alpha as a cosmic lighthouse to guide stray matter back into the sector.",
+      "radius": "10 km",
+      "color": "Cyan/White",
+      "temperature": "Millions of degrees",
+      "gravity": "2 billion G",
+      "interestingFacts": "It completes one full rotation every 1.5 milliseconds.",
+      "relatedObjects": ["forge"],
+      "suggestedQuestions": [
+        "What causes the light beams?",
+        "How heavy is a teaspoon of a pulsar?",
+        "Is it dangerous?"
+      ]
+    },
+    {
+      "id": "quasar-1",
+      "name": "Quasar Prime",
+      "type": "quasar",
+      "description": "An extremely luminous active galactic nucleus powered by a supermassive black hole.",
+      "scientificFacts": [
+        "Quasars can outshine entire galaxies containing hundreds of billions of stars.",
+        "The energy jets are ejected at nearly the speed of light."
+      ],
+      "lore": "Quasar Prime powers the entire Architect of Worlds simulation engine.",
+      "radius": "Supermassive",
+      "color": "Pink/Red",
+      "temperature": "Trillions of degrees in jets",
+      "gravity": "Extreme",
+      "interestingFacts": "Its light has been traveling for 12 billion years to reach us.",
+      "relatedObjects": ["singularity"],
+      "suggestedQuestions": [
+        "What fuels the quasar?",
+        "Are those jets made of fire?",
+        "How old is it?"
+      ]
+    },
+    {
+      "id": "ruins-1",
+      "name": "Ancient Ruins",
+      "type": "ruins",
+      "description": "Drifting monolithic structures inscribed with glowing green runes.",
+      "scientificFacts": [
+        "No known natural process creates perfect monolithic rectangular structures in deep space."
+      ],
+      "lore": "These are the shattered fragments of the very first code ever written by the Architect.",
+      "radius": "300 meters",
+      "color": "Black/Green",
+      "temperature": "-270°C",
+      "gravity": "Microgravity",
+      "interestingFacts": "The runes pulse in rhythm with the user's heartbeat.",
+      "relatedObjects": [],
+      "suggestedQuestions": [
+        "Who built these?",
+        "What do the runes say?",
+        "Are they dangerous?"
+      ]
+    }
+  ]
+}
