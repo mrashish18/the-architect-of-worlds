@@ -366,6 +366,6 @@ Please run `npm run build` before opening a PR. The current `npm run lint` scrip
 
 ---
 
-## 📄 License
+## 📄 Copyright
 
-No standalone license file is currently included in this repository. Add a `LICENSE` file before distributing or accepting external contributions under a specific license.
+Copyright © 2026 The Architect of Worlds. All rights reserved.
