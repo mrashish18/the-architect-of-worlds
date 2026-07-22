@@ -178,15 +178,13 @@ npm start
 
 ## 🖼️ Screenshot Gallery
 
-### The Universe
-![Space Overview](project_media/Screenshot%202026-07-22%20224054.png)
-![Starfield](project_media/Screenshot%202026-07-22%20224113.png)
-
 ### The Worlds
-![Ocean World](project_media/Screenshot%202026-07-22%20224137.png)
-![Crystal Moon](project_media/Screenshot%202026-07-22%20224154.png)
+![Ocean World](project_media/Screenshot%202026-07-22%20224054.png)
+![The Nexus](project_media/Screenshot%202026-07-22%20224113.png)
+![Secret Planet](project_media/Screenshot%202026-07-22%20224137.png)
 
 ### The Galactic Garden
+![Garden Intro](project_media/Screenshot%202026-07-22%20224154.png)
 ![Garden View](project_media/Screenshot%202026-07-22%20224210.png)
 ![Flora Detail](project_media/Screenshot%202026-07-22%20224228.png)
 ![Garden Ecosystem](project_media/Screenshot%202026-07-22%20224241.png)
