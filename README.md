@@ -21,19 +21,19 @@
 ## 📸 Project Preview
 
 **The Architect Universe Overview**
-![Hero Overview](project_media/Screenshot%202026-07-22%20223916.png)
+![Hero Overview](project_media/The%20Architect%20Universe%20Overview.png)
 
 **Terra Earth (The Living World)**
-![Terra Earth](project_media/Screenshot%202026-07-22%20223939.png)
+![Terra Earth](project_media/Terra%20Earth%20(The%20Living%20World).png)
 
 **Forge Planet (Where Ideas Are Forged)**
-![Forge Planet](project_media/Screenshot%202026-07-22%20223956.png)
+![Forge Planet](project_media/Forge%20Planet%20(Where%20Ideas%20Are%20Forged).png)
 
 **Crystal Moon (Facets of Experience)**
-![Crystal Moon](project_media/Screenshot%202026-07-22%20224014.png)
+![Crystal Moon](project_media/Crystal%20Moon%20(Facets%20of%20Experience).png)
 
 **Singularity (The Event Horizon)**
-![Singularity](project_media/Screenshot%202026-07-22%20224034.png)
+![Singularity](project_media/Singularity%20(The%20Event%20Horizon).png)
 
 ---
 
@@ -179,23 +179,23 @@ npm start
 ## 🖼️ Screenshot Gallery
 
 ### The Worlds
-![Ocean World](project_media/Screenshot%202026-07-22%20224054.png)
-![The Nexus](project_media/Screenshot%202026-07-22%20224113.png)
-![Secret Planet](project_media/Screenshot%202026-07-22%20224137.png)
+![Ocean World](project_media/Ocean%20World.png)
+![The Nexus](project_media/The%20Nexus.png)
+![The Nexus (Alternate View)](project_media/The%20Nexus%20(2).png)
 
 ### The Galactic Garden
-![Garden Intro](project_media/Screenshot%202026-07-22%20224154.png)
-![Garden View](project_media/Screenshot%202026-07-22%20224210.png)
-![Flora Detail](project_media/Screenshot%202026-07-22%20224228.png)
-![Garden Ecosystem](project_media/Screenshot%202026-07-22%20224241.png)
+![Galactic Garden](project_media/Galactic%20Garden.png)
+![Galactic Garden Full View](project_media/Galactic%20Garden%20Full%20View.png)
+![Void Willow Sprout](project_media/Void%20Willow%20Sprout.png)
+![Nebula Orb Tendril](project_media/Nebula%20Orb%20Tendril.png)
 
 ### UI & Nova AI
-![Nova AI Chat](project_media/Screenshot%202026-07-22%20224329.png)
-![Exploration HUD](project_media/Screenshot%202026-07-22%20224431.png)
-![Telemetry 1](project_media/Screenshot%202026-07-22%20224511.png)
-![Telemetry 2](project_media/Screenshot%202026-07-22%20224607.png)
-![Telemetry 3](project_media/Screenshot%202026-07-22%20224624.png)
-![Telemetry 4](project_media/Screenshot%202026-07-22%20224641.png)
+![Universal Guide Nova](project_media/Universal%20Guide(Nova).png)
+![The Architect Universe](project_media/The%20Architect%20Universe.png)
+![Architect Story](project_media/Architect%20Story.png)
+![3D & AI Project](project_media/3D%20&%20AI%20Project.png)
+![Technical Toolkit](project_media/Technical%20Toolkit.png)
+![Transmission](project_media/Transmission.png)
 
 ---
 
