@@ -5,6 +5,12 @@
 
 *Every world begins with an idea. Explore handcrafted planets inside a cosmic workshop built for the browser.*
 
+### 🚀 Quick Links
+
+🌐 **Live Demo:** https://the-architect-of-worlds.vercel.app
+
+💻 **Source Code:** https://github.com/mrashish18/the-architect-of-worlds
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL-white?style=for-the-badge&logo=three.js&logoColor=black)](https://threejs.org/)
@@ -26,6 +32,25 @@
 **Event:** 3D Websites Hackathon  
 **Theme:** Creative & Immersive 3D Web Experiences  
 **Project:** The Architect of Worlds
+
+### Submission Links
+
+| Resource | Link |
+|----------|------|
+| 🌐 Live Website | https://the-architect-of-worlds.vercel.app |
+| 💻 GitHub Repository | https://github.com/mrashish18/the-architect-of-worlds |
+
+---
+
+## 🎥 Demo
+
+🌍 **Live Website**
+
+https://the-architect-of-worlds.vercel.app
+
+💻 **GitHub Repository**
+
+https://github.com/mrashish18/the-architect-of-worlds
 
 ## ✨ Highlights
 
@@ -363,6 +388,18 @@ Contributions are welcome from graphics programmers, UI engineers, and storytell
 5. Open a Pull Request
 
 Please run `npm run build` before opening a PR. The current `npm run lint` script references `next lint`, which is not available in this Next.js version and may need to be updated before it can be used reliably.
+
+---
+
+## 🔗 Project Links
+
+🌐 Live Demo
+
+https://the-architect-of-worlds.vercel.app
+
+💻 GitHub Repository
+
+https://github.com/mrashish18/the-architect-of-worlds
 
 ---
 
