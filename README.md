@@ -43,7 +43,7 @@
 ![The Architect Universe](project_media/The%20Architect%20Universe.png)
 ![The Nexus](project_media/The%20Nexus.png)
 
-### The Handcrafted Worlds
+### 🪐 Realms of the Architect
 ![Forge Planet](project_media/Forge%20Planet%20(Where%20Ideas%20Are%20Forged).png)
 ![Ocean World](project_media/Ocean%20World.png)
 ![Crystal Moon](project_media/Crystal%20Moon%20(Facets%20of%20Experience).png)
@@ -308,13 +308,4 @@ Please ensure you run `npm run lint` and `npm run build` before opening a PR.
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
 
----
 
-## 🖋️ Author
-
-**The Architect**
-- **GitHub**: [Profile Link Placeholder]()
-- **LinkedIn**: [Profile Link Placeholder]()
-- **Portfolio**: [Portfolio Link Placeholder]()
-
-*Built with passion, code, and starlight.*
