@@ -98,7 +98,13 @@ export function AudioManager() {
       drones.forEach((osc) => {
         try { osc.stop() } catch { /* already stopped */ }
       })
-      ctx?.close()
+      try {
+        if (ctx?.state !== 'closed') {
+          ctx?.close()
+        }
+      } catch {
+        // Ignore AudioContext close errors
+      }
     }
   }, [])
 

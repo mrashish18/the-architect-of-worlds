@@ -19,7 +19,7 @@ const SpaceLighting: React.FC = () => {
 
   return (
     <>
-      <Environment preset="night" />
+
       <ambientLight intensity={0.12} />
       <directionalLight
         position={[50, 30, 50]}
