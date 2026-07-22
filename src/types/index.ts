@@ -25,6 +25,20 @@ export interface WorldConfig {
   scale: number
 }
 
+export interface DeepScientificSpecs {
+  mass?: string
+  diameter?: string
+  gravity?: string
+  temperature?: string
+  orbitalPeriod?: string
+  distanceFromCore?: string
+  atmosphere?: string[]
+  composition?: string[]
+  moonsCount?: number
+  satellites?: string[]
+  keyMissions?: string[]
+}
+
 export interface CameraState {
   position: Vector3Tuple
   target: Vector3Tuple
@@ -36,3 +50,11 @@ export interface CameraWaypoint extends CameraState {
 }
 
 export type QualityTier = 'high' | 'medium' | 'low'
+
+export interface ExplorationAchievement {
+  id: string
+  title: string
+  description: string
+  iconName: string
+  unlockedAt: string
+}

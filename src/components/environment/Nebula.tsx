@@ -12,7 +12,7 @@ const NebulaMaterial = shaderMaterial(
     uColor1: new THREE.Color('#4a00e0'),
     uColor2: new THREE.Color('#8e2de2'),
     uColor3: new THREE.Color('#f5576c'),
-    uOpacity: 0.4,
+    uOpacity: 0.15,
   },
   vertexShader,
   fragmentShader
@@ -28,7 +28,7 @@ interface NebulaCloudProps {
   opacity?: number
 }
 
-const NebulaCloud = ({ position, rotation, colors, scale, opacity = 0.4 }: NebulaCloudProps) => {
+const NebulaCloud = ({ position, rotation, colors, scale, opacity = 0.15 }: NebulaCloudProps) => {
   const meshRef = useRef<THREE.Mesh>(null)
   const materialRef = useRef<any>(null) // eslint-disable-line @typescript-eslint/no-explicit-any
 
@@ -37,7 +37,7 @@ const NebulaCloud = ({ position, rotation, colors, scale, opacity = 0.4 }: Nebul
       materialRef.current.uTime = state.clock.elapsedTime
     }
     if (meshRef.current) {
-      meshRef.current.rotation.z += 0.0005
+      meshRef.current.rotation.z += 0.0002
     }
   })
 
@@ -62,10 +62,10 @@ const NebulaCloud = ({ position, rotation, colors, scale, opacity = 0.4 }: Nebul
 
 const Nebula: React.FC = () => {
   const clouds: NebulaCloudProps[] = [
-    { position: [-20, 10, -40], rotation: [0, Math.PI / 4, 0], colors: ['#4a00e0', '#1a0033', '#8e2de2'], scale: 80 },
-    { position: [30, -10, -60], rotation: [0, -Math.PI / 6, 0], colors: ['#8e2de2', '#4a00e0', '#f5576c'], scale: 70, opacity: 0.3 },
-    { position: [0, 20, -80], rotation: [Math.PI / 8, 0, 0], colors: ['#f5576c', '#FF8C00', '#1a0033'], scale: 90, opacity: 0.25 },
-    { position: [-40, -20, -30], rotation: [0, Math.PI / 3, 0], colors: ['#1a0033', '#4a00e0', '#0077B6'], scale: 60, opacity: 0.35 },
+    { position: [-60, 20, -180], rotation: [0, Math.PI / 4, 0], colors: ['#4a00e0', '#1a0033', '#8e2de2'], scale: 60, opacity: 0.15 },
+    { position: [80, -30, -200], rotation: [0, -Math.PI / 6, 0], colors: ['#8e2de2', '#4a00e0', '#f5576c'], scale: 50, opacity: 0.12 },
+    { position: [0, 40, -220], rotation: [Math.PI / 8, 0, 0], colors: ['#f5576c', '#FF8C00', '#1a0033'], scale: 70, opacity: 0.1 },
+    { position: [-90, -40, -160], rotation: [0, Math.PI / 3, 0], colors: ['#1a0033', '#4a00e0', '#0077B6'], scale: 45, opacity: 0.14 },
   ]
 
   return (

@@ -18,6 +18,7 @@
     "framer-motion": "^12.42.2",
     "gsap": "^3.15.0",
     "leva": "^0.10.1",
+    "lucide-react": "^1.25.0",
     "maath": "^0.10.8",
     "next": "^15.3.0",
     "postprocessing": "^6.39.3",

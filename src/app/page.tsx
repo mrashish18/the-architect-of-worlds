@@ -10,10 +10,19 @@ import DiscoveryHUD from '@/components/ui/DiscoveryHUD'
 import Toolbar from '@/components/ui/Toolbar'
 import NovaChat from '@/components/ui/nova/NovaChat'
 import DiscoveryLog from '@/components/ui/nova/DiscoveryLog'
+import WorldDetail from '@/components/ui/WorldDetail'
+import { GrandWorldNavigator } from '@/components/ui/GrandWorldNavigator'
+import { ArchitectPortfolioReward } from '@/components/ui/ArchitectPortfolioReward'
 import { TransitionWipe } from '@/components/effects/TransitionWipe'
 import { AudioManager } from '@/components/audio/AudioManager'
 import { useWorldNavigation } from '@/hooks/useWorldNavigation'
 import { useWorldStore } from '@/stores/useWorldStore'
+
+import { GardenIntroOverlay } from '@/components/ui/garden/GardenIntroOverlay'
+import { PlantHoloLabel } from '@/components/ui/garden/PlantHoloLabel'
+import { GardenHUD } from '@/components/ui/garden/GardenHUD'
+import { GardenEcosystemStats } from '@/components/ui/garden/GardenEcosystemStats'
+import { PlantDetailModal } from '@/components/ui/garden/PlantDetailModal'
 
 const SceneCanvas = dynamic(
   () => import('@/components/canvas/SceneCanvas'),
@@ -28,40 +37,67 @@ function NavigationHandler() {
   return null
 }
 
-
 export default function HomePage() {
   const [sceneReady, setSceneReady] = useState(false)
-  const { photoMode } = useWorldStore()
+  const { photoMode, viewMode } = useWorldStore()
 
   const handleSceneReady = useCallback(() => {
     setSceneReady(true)
   }, [])
 
   return (
-    <main className="relative w-screen h-screen overflow-hidden bg-black">
+    <main className="relative w-screen h-screen overflow-hidden bg-black select-none">
       {/* 3D Canvas */}
-      <div className="canvas-container">
+      <div className="absolute inset-0 z-0">
         <SceneCanvas onCreated={handleSceneReady} />
       </div>
 
-      {/* UI Overlay */}
-      <div className="ui-overlay">
+      {/* Main UI Overlay Container */}
+      <div className="relative z-10 pointer-events-none w-full h-full">
         <LoadingScreen isLoaded={sceneReady} />
-        {!photoMode && (
+
+        {sceneReady && (
           <>
-            <IntroSequence />
-            <TitleOverlay />
-            <DiscoveryHUD />
-            <NovaChat />
-            <DiscoveryLog />
-            <AudioToggle />
+            {/* Top Grand World & Nova Navigator Bar */}
+            {!photoMode && <GrandWorldNavigator />}
+
+            {/* Mode 1: 3D Universe Explorations */}
+            {viewMode === 'universe' && (
+              <>
+                {!photoMode && (
+                  <div className="pointer-events-auto">
+                    <IntroSequence />
+                    <TitleOverlay />
+                    <DiscoveryHUD />
+                    <WorldDetail />
+                    <NovaChat />
+                    <DiscoveryLog />
+                    <AudioToggle />
+                    <ArchitectPortfolioReward />
+                  </div>
+                )}
+              </>
+            )}
+
+            {/* Mode 2: Galactic Garden Biosphere */}
+            {viewMode === 'garden' && (
+              <>
+                <GardenIntroOverlay />
+                <PlantHoloLabel />
+                <GardenHUD />
+                <GardenEcosystemStats />
+                <PlantDetailModal />
+              </>
+            )}
+
+            {/* Bottom Toolbar & Mode Switcher */}
+            <Toolbar />
+            <TransitionWipe />
           </>
         )}
-        <Toolbar />
-        <TransitionWipe />
       </div>
 
-      {/* Non-visual */}
+      {/* Non-visual Managers */}
       <NavigationHandler />
       <AudioManager />
     </main>

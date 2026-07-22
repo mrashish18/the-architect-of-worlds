@@ -20,12 +20,11 @@ const SpaceLighting: React.FC = () => {
   return (
     <>
       <Environment preset="night" />
-      <ambientLight intensity={0.08} />
+      <ambientLight intensity={0.12} />
       <directionalLight
         position={[50, 30, 50]}
-        intensity={1.5}
+        intensity={1.8}
         color="#fff0e6"
-        castShadow
       />
       {WORLD_ORDER.map((worldId) => {
         const world = WORLDS[worldId]

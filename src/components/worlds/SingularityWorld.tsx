@@ -3,14 +3,11 @@
 import React, { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { useWorldStore } from '@/stores/useWorldStore'
 import { WORLDS } from '@/config/worlds'
-import { Html } from '@react-three/drei'
+import { SingularityTimeRewindInteraction } from '@/components/interactive/SingularityTimeRewindInteraction'
 
 export function SingularityWorld() {
-  const { activeWorld } = useWorldStore()
   const config = WORLDS['singularity']
-  const isActive = activeWorld === 'singularity'
 
   const pointsRef = useRef<THREE.Points>(null!)
   const centerRef = useRef<THREE.Mesh>(null!)
@@ -87,31 +84,8 @@ export function SingularityWorld() {
         <pointsMaterial size={0.015} color="#ff0055" transparent opacity={0.6} blending={THREE.AdditiveBlending} />
       </points>
 
-      {isActive && (
-        <Html position={[0, 0, 0]} center zIndexRange={[100, 0]}>
-          <div className="flex flex-col animate-fade-in-up mt-32 ml-48 pointer-events-auto">
-            <div className="w-[400px] p-8 bg-black/40 border-l-2 border-rose-500/50 backdrop-blur-2xl">
-              <h2 className="text-3xl font-heading text-white tracking-[0.2em] mb-4 text-glow">CONTACT</h2>
-              <div className="space-y-4">
-                <p className="text-white/60 font-sans text-sm mb-6 leading-relaxed">
-                  The singularity represents the convergence of ideas. If you are ready to cross the event horizon, establish a connection.
-                </p>
-                <button className="w-full py-3 bg-rose-600/20 hover:bg-rose-600/40 border border-rose-500/50 text-white font-heading tracking-widest text-sm transition-all shadow-[0_0_15px_rgba(255,0,85,0.2)]">
-                  INITIATE TRANSMISSION
-                </button>
-                <div className="flex justify-between gap-4 mt-4">
-                  <button className="flex-1 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white/70 font-mono text-xs transition-colors">
-                    GITHUB
-                  </button>
-                  <button className="flex-1 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white/70 font-mono text-xs transition-colors">
-                    LINKEDIN
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Html>
-      )}
+      {/* Interactive Singularity Time Rewind */}
+      <SingularityTimeRewindInteraction />
     </group>
   )
 }

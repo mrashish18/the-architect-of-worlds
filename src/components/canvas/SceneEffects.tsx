@@ -1,44 +1,65 @@
 'use client'
 
+import React, { Component, ReactNode } from 'react'
 import {
   EffectComposer,
   Bloom,
   Vignette,
   ChromaticAberration,
-  GodRays,
 } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'
 import { Vector2 } from 'three'
 import { QualityTier } from '@/types'
-import { useWorldStore } from '@/stores/useWorldStore'
 
 interface SceneEffectsProps {
   quality: QualityTier
 }
 
-export function SceneEffects({ quality }: SceneEffectsProps) {
-  const { nexusCoreRef } = useWorldStore()
+class PostprocessingErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
+  constructor(props: { children: ReactNode }) {
+    super(props)
+    this.state = { hasError: false }
+  }
 
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+
+  componentDidCatch(error: Error) {
+    console.warn('Postprocessing effect load skipped:', error)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return null
+    }
+    return this.props.children
+  }
+}
+
+export function SceneEffects({ quality }: SceneEffectsProps) {
   if (quality === 'low') {
     return (
-      <EffectComposer multisampling={0}>
-        <Bloom
-          luminanceThreshold={0.8}
-          luminanceSmoothing={0.9}
-          intensity={0.4}
-          mipmapBlur
-        />
-      </EffectComposer>
+      <PostprocessingErrorBoundary>
+        <EffectComposer multisampling={0}>
+          <Bloom
+            luminanceThreshold={0.8}
+            luminanceSmoothing={0.9}
+            intensity={0.4}
+            mipmapBlur
+          />
+        </EffectComposer>
+      </PostprocessingErrorBoundary>
     )
   }
 
-  if (quality === 'medium') {
-    return (
+  return (
+    <PostprocessingErrorBoundary>
       <EffectComposer multisampling={0}>
         <Bloom
-          luminanceThreshold={0.6}
+          luminanceThreshold={0.5}
           luminanceSmoothing={0.9}
-          intensity={0.7}
+          intensity={1.2}
           mipmapBlur
           levels={5}
         />
@@ -47,66 +68,13 @@ export function SceneEffects({ quality }: SceneEffectsProps) {
           darkness={0.7}
           blendFunction={BlendFunction.NORMAL}
         />
-      </EffectComposer>
-    )
-  }
-
-  if (!nexusCoreRef) {
-    return (
-      <EffectComposer multisampling={4}>
-        <Bloom
-          luminanceThreshold={0.4}
-          luminanceSmoothing={0.9}
-          intensity={1.5}
-          mipmapBlur
-          levels={8}
-        />
-        <Vignette
-          offset={0.3}
-          darkness={0.7}
-          blendFunction={BlendFunction.NORMAL}
-        />
         <ChromaticAberration
-          offset={new Vector2(0.0008, 0.0008)}
+          offset={new Vector2(0.0006, 0.0006)}
           blendFunction={BlendFunction.NORMAL}
           radialModulation
           modulationOffset={0.5}
         />
       </EffectComposer>
-    )
-  }
-
-  return (
-    <EffectComposer multisampling={4}>
-      <Bloom
-        luminanceThreshold={0.4}
-        luminanceSmoothing={0.9}
-        intensity={1.5}
-        mipmapBlur
-        levels={8}
-      />
-      <Vignette
-        offset={0.3}
-        darkness={0.7}
-        blendFunction={BlendFunction.NORMAL}
-      />
-      <ChromaticAberration
-        offset={new Vector2(0.0008, 0.0008)}
-        blendFunction={BlendFunction.NORMAL}
-        radialModulation
-        modulationOffset={0.5}
-      />
-      <GodRays
-        sun={nexusCoreRef}
-        blendFunction={BlendFunction.SCREEN}
-        samples={40}
-        density={0.98}
-        decay={0.97}
-        weight={0.7}
-        exposure={0.6}
-        clampMax={1}
-        blur
-      />
-    </EffectComposer>
+    </PostprocessingErrorBoundary>
   )
 }

@@ -10,6 +10,7 @@ export function AudioManager() {
   const ctxRef = useRef<AudioContext | null>(null)
   const gainRef = useRef<GainNode | null>(null)
   const dronesRef = useRef<OscillatorNode[]>([])
+  const worldSynthRef = useRef<OscillatorNode | null>(null)
   const isInitRef = useRef(false)
 
   const initAudio = useCallback(() => {
@@ -101,33 +102,96 @@ export function AudioManager() {
     }
   }, [])
 
-  // UI interaction chime on activeWorld change
+  // World-Specific Soundscape Synthesizer
   useEffect(() => {
-    if (!activeWorld || !ctxRef.current || !gainRef.current || isMuted) return
+    if (!ctxRef.current || !gainRef.current || isMuted) return
+    const ctx = ctxRef.current
+
+    // Stop previous world synth oscillator if playing
+    if (worldSynthRef.current) {
+      try {
+        worldSynthRef.current.stop()
+      } catch {
+        /* already stopped */
+      }
+      worldSynthRef.current = null
+    }
+
+    if (!activeWorld) return
 
     try {
-      const ctx = ctxRef.current
-      
       const osc = ctx.createOscillator()
       const gain = ctx.createGain()
-      
-      // Soft high-pitched synth pluck
-      osc.type = 'sine'
-      osc.frequency.setValueAtTime(880, ctx.currentTime)
-      osc.frequency.exponentialRampToValueAtTime(440, ctx.currentTime + 0.1)
-      
-      // Quick exponential decay envelope
+      const filter = ctx.createBiquadFilter()
+
+      let freq = 220
+      let waveType: OscillatorType = 'sine'
+      let filterFreq = 1000
+
+      switch (activeWorld) {
+        case 'forge':
+          freq = 65 // Volcanic low saw rumble
+          waveType = 'sawtooth'
+          filterFreq = 400
+          break
+        case 'ocean':
+          freq = 110 // Deep sub sea chord
+          waveType = 'sine'
+          filterFreq = 600
+          break
+        case 'crystal':
+          freq = 880 // High crystalline chime
+          waveType = 'triangle'
+          filterFreq = 3000
+          break
+        case 'singularity':
+          freq = 40 // Gravitational black hole sub-bass
+          waveType = 'sawtooth'
+          filterFreq = 200
+          break
+        case 'emerald':
+          freq = 330 // Lush major 7th atmosphere
+          waveType = 'sine'
+          filterFreq = 1200
+          break
+        case 'nexus':
+          freq = 440 // Golden fundamental core A4
+          waveType = 'sine'
+          filterFreq = 2000
+          break
+        default:
+          freq = 220
+      }
+
+      osc.type = waveType
+      osc.frequency.setValueAtTime(freq, ctx.currentTime)
+
+      filter.type = 'lowpass'
+      filter.frequency.setValueAtTime(filterFreq, ctx.currentTime)
+
       gain.gain.setValueAtTime(0, ctx.currentTime)
-      gain.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 0.02)
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5)
-      
-      osc.connect(gain)
-      gain.connect(gainRef.current)
-      
+      gain.gain.linearRampToValueAtTime(0.04, ctx.currentTime + 0.5)
+
+      osc.connect(filter).connect(gain).connect(gainRef.current)
       osc.start()
-      osc.stop(ctx.currentTime + 0.6)
+      worldSynthRef.current = osc
+
+      // Navigation Chime
+      const chimeOsc = ctx.createOscillator()
+      const chimeGain = ctx.createGain()
+      chimeOsc.type = 'sine'
+      chimeOsc.frequency.setValueAtTime(freq * 2, ctx.currentTime)
+      chimeOsc.frequency.exponentialRampToValueAtTime(freq, ctx.currentTime + 0.3)
+
+      chimeGain.gain.setValueAtTime(0, ctx.currentTime)
+      chimeGain.gain.linearRampToValueAtTime(0.06, ctx.currentTime + 0.02)
+      chimeGain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5)
+
+      chimeOsc.connect(chimeGain).connect(gainRef.current)
+      chimeOsc.start()
+      chimeOsc.stop(ctx.currentTime + 0.6)
     } catch {
-      // Ignore audio errors
+      // Audio errors silenced
     }
   }, [activeWorld, isMuted])
 

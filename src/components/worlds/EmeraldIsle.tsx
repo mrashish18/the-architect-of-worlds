@@ -3,15 +3,12 @@
 import React, { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { useWorldStore } from '@/stores/useWorldStore'
 import { WORLDS } from '@/config/worlds'
-import { Html } from '@react-three/drei'
 import { earthVertexShader, earthFragmentShader, cloudVertexShader, cloudFragmentShader, atmosphereVertexShader, atmosphereFragmentShader } from '@/shaders/earth'
+import { EmeraldTreeInteraction } from '@/components/interactive/EmeraldTreeInteraction'
 
 export function EmeraldIsle() {
-  const { activeWorld } = useWorldStore()
   const config = WORLDS['emerald']
-  const isActive = activeWorld === 'emerald'
 
   const surfaceRef = useRef<THREE.Mesh>(null!)
   const cloudsRef = useRef<THREE.Mesh>(null!)
@@ -81,26 +78,8 @@ export function EmeraldIsle() {
         />
       </mesh>
 
-      {/* UI Overlay */}
-      {isActive && (
-        <Html position={[0, 0, 0]} center zIndexRange={[100, 0]}>
-          <div className="flex flex-col animate-fade-in-up mt-32 ml-48 pointer-events-auto">
-            <div className="w-[400px] p-8 bg-black/40 border-l-2 border-emerald-400/50 backdrop-blur-2xl rounded-r-xl">
-              <h2 className="text-3xl font-heading text-white tracking-[0.2em] mb-4 text-glow">ABOUT ME</h2>
-              <div className="text-white/80 font-sans text-sm leading-relaxed space-y-4">
-                <p>
-                  I am a passionate creative developer specializing in immersive 3D experiences.
-                  My goal is to bridge the gap between engineering and art.
-                </p>
-                <div className="h-px w-full bg-emerald-500/30" />
-                <p className="text-emerald-300 font-mono text-xs">
-                  CURRENT ORBIT: EXPLORING WEBGL
-                </p>
-              </div>
-            </div>
-          </div>
-        </Html>
-      )}
+      {/* Interactive Seed Planting & Magical Tree Growth */}
+      <EmeraldTreeInteraction />
     </group>
   )
 }

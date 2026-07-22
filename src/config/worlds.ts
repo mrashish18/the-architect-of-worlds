@@ -28,9 +28,9 @@ export const WORLDS: Record<WorldId, WorldConfig> = {
 
   emerald: {
     id: 'emerald',
-    name: 'Emerald Isle',
+    name: 'Terra Earth',
     subtitle: 'The Living World',
-    description: `Emerald Isle floats as a lush, verdant sanctuary teeming with procedural forests and swirling cloud systems. It is the manifestation of identity and life, a realm where personal narratives take root and grow into complex ecosystems.\n\nEvery leaf and rushing river tells a story of adaptation and growth. It serves as the 'About' section of the cosmos, breathing life into cold logic and providing a warm, organic contrast to the structured void.\n\nHere, you will find the human element—the spark of creativity that transforms mere syntax into a living, breathing experience that resonates with visitors.`,
+    description: `Terra Earth floats as a lush, verdant sanctuary teeming with procedural forests, continents, oceans, and swirling cloud systems. It is the manifestation of identity, nature, and organic life in the cosmos.\n\nEvery leaf and rushing river tells a story of adaptation and growth. It serves as the living biosphere of the cosmos, breathing life into cold logic and providing a warm, organic contrast to the structured void.\n\nHere, you will find the human element—the spark of creativity that transforms mere syntax into a living, breathing experience that resonates with visitors.`,
     position: [14, 3, -12],
     colors: {
       primary: '#00D68F',
