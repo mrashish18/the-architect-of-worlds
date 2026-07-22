@@ -366,6 +366,8 @@ Please run `npm run build` before opening a PR. The current `npm run lint` scrip
 
 ---
 
-## 📄 Copyright
+## 📄 License & Intellectual Property
 
-Copyright © 2026 The Architect of Worlds. All rights reserved.
+© 2026 Ashish Kumar. All Rights Reserved.
+
+This repository is published for portfolio and hackathon evaluation purposes only. Unauthorized copying, redistribution, modification, reproduction, or commercial use of any part of this repository is prohibited without prior written permission from the project author.
