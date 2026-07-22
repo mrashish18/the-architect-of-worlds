@@ -1,9 +1,9 @@
 <div align="center">
 
 # 🌌 The Architect of Worlds
-### A Cinematic Interactive 3D Universe Built with Next.js & Three.js
+### A Cinematic Interactive 3D Universe Experience
 
-*Experience a universe where logic, nature, and engineering converge into breathtaking interactive 3D web art.*
+*Every world begins with an idea. Explore handcrafted planets inside a living cosmic workshop.*
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -11,79 +11,104 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![OpenAI](https://img.shields.io/badge/Nova_AI-Powered-412991?style=for-the-badge&logo=openai)](https://openai.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Hackathon](https://img.shields.io/badge/Built_For-3D_Websites_Hackathon-FF00AA?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Responsive](https://img.shields.io/badge/Responsive-Mobile_Ready-orange?style=for-the-badge)]()
+
+![Hero Overview](project_media/The%20Architect%20Universe%20Overview.png)
 
 </div>
 
 ---
 
-## 📸 Project Preview
+## 🏆 Hackathon Submission
 
-**The Architect Universe Overview**
-![Hero Overview](project_media/The%20Architect%20Universe%20Overview.png)
+**Event:** 3D Websites Hackathon  
+**Theme:** Creative & Immersive 3D Web Experiences  
+**Project:** The Architect of Worlds
 
-**Terra Earth (The Living World)**
+## ✨ Highlights
+
+- 🌌 **Cinematic 3D universe** rendered at 60 FPS in the browser.
+- 🪐 **Interactive handcrafted worlds** built with custom GLSL shaders.
+- 🤖 **AI-powered Nova assistant** streaming real-time contextual knowledge.
+- 🎮 **Story-driven exploration** bridging web development with game design.
+- ⚡ **Built with Next.js + React Three Fiber** for modern, scalable architecture.
+
+---
+
+## 📸 Screenshot Gallery
+
+### The Universe
+![The Architect Universe](project_media/The%20Architect%20Universe.png)
+![The Nexus](project_media/The%20Nexus.png)
+
+### The Handcrafted Worlds
+![Forge Planet](project_media/Forge%20Planet%20(Where%20Ideas%20Are%20Forged).png)
+![Ocean World](project_media/Ocean%20World.png)
+![Crystal Moon](project_media/Crystal%20Moon%20(Facets%20of%20Experience).png)
+![Singularity](project_media/Singularity%20(The%20Event%20Horizon).png)
 ![Terra Earth](project_media/Terra%20Earth%20(The%20Living%20World).png)
 
-**Forge Planet (Where Ideas Are Forged)**
-![Forge Planet](project_media/Forge%20Planet%20(Where%20Ideas%20Are%20Forged).png)
+### The Galactic Garden (Portfolio)
+![Galactic Garden](project_media/Galactic%20Garden.png)
+![Galactic Garden Full View](project_media/Galactic%20Garden%20Full%20View.png)
+![Void Willow Sprout](project_media/Void%20Willow%20Sprout.png)
+![Nebula Orb Tendril](project_media/Nebula%20Orb%20Tendril.png)
 
-**Crystal Moon (Facets of Experience)**
-![Crystal Moon](project_media/Crystal%20Moon%20(Facets%20of%20Experience).png)
-
-**Singularity (The Event Horizon)**
-![Singularity](project_media/Singularity%20(The%20Event%20Horizon).png)
+### Nova AI & Interfaces
+![Universal Guide Nova](project_media/Universal%20Guide(Nova).png)
+![Architect Story](project_media/Architect%20Story.png)
+![3D & AI Project](project_media/3D%20&%20AI%20Project.png)
+![Technical Toolkit](project_media/Technical%20Toolkit.png)
+![Transmission](project_media/Transmission.png)
 
 ---
 
 ## 📖 About
 
-**What is The Architect of Worlds?**
-The Architect of Worlds is an ambitious, cinematic 3D WebGL universe crafted for the 3D Websites Hackathon. It replaces the traditional concept of static portfolios and standard web navigation with an unforgettable emotional interactive journey. 
+**What is The Architect of Worlds?**  
+The Architect of Worlds is an ambitious, cinematic 3D WebGL universe that pushes the boundaries of traditional web navigation. It transforms a standard portfolio into an emotional, interactive journey through a procedurally generated cosmos.
 
-**What Inspired It?**
-Inspired by deep space exploration, interactive museum exhibits, and high-end video game menus, this project demonstrates that 3D websites can transcend simple 3D model viewers. It's about storytelling, curiosity, and immersion.
+**Why was it built?**  
+To prove that web browsers are capable of delivering console-quality, story-driven 3D experiences without the need for massive downloads, pre-rendered videos, or heavy plugins.
 
-**Why It Exists?**
-To push the boundaries of what is possible in the browser. By combining Next.js App Router, React Three Fiber, Custom GLSL Shaders, and Web Audio API, the project achieves console-quality visuals and audio running entirely in a web browser.
+**What inspired it?**  
+Inspired by deep-space exploration, ambient gaming menus, and sci-fi world-building. The creative direction treats the visitor like an astronaut arriving in a new solar system.
 
-**What Makes It Different?**
-Every planet, nebula, and interactive element is generated procedurally with custom shaders. There are no pre-rendered videos or heavy baked models holding the experience back. It features a fully integrated conversational AI (Nova) that acts as an orbital guide, directly tied to the lore and state of the 3D world.
+**What experience does it create?**  
+Users are invited to pan, zoom, and fly through a galaxy, discovering planets, unlocking lore, interacting with environmental mechanics, and conversing with an integrated AI orbital guide.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-| Feature | Description |
-| :--- | :--- |
-| **✨ Cinematic Intro** | Breathtaking camera sweeps and procedurally generated loading sequences. |
-| **🌌 Interactive Universe** | Full 3D environment with free-camera navigation, zoom, and panning. |
-| **🪐 Handcrafted Worlds** | 6 unique celestial bodies: The Nexus, Terra Earth, Forge Planet, Ocean World, Crystal Moon, and Singularity. |
-| **🎥 Smooth Camera Animation** | GSAP-powered cinematic camera transitions that smoothly lock onto celestial targets. |
-| **🎨 Custom Shaders** | Complex GLSL fragment and vertex shaders for atmospheres, lava, crystals, and nebulas. |
-| **🌠 Dynamic Particles** | Thousands of instanced cosmic dust motes and volumetric starlight rays. |
-| **🤖 Nova AI Assistant** | OpenAI-powered streaming AI companion that knows the lore and science of every planet. |
-| **⚡ Performance Optimized** | Dynamic LOD, multisampling tuning, and lazy-loaded WebGL components for 60fps rendering. |
-| **🌙 Dark Theme** | Immersive deep space aesthetic with glowing UI elements and glassmorphism. |
-| **🎧 Procedural Audio** | Real-time synthesized ambient drone and acoustic feedback using Web Audio API. |
+✓ **Cinematic Intro** - Auto-dismissing loading sequences that gracefully transition into the 3D scene.  
+✓ **Interactive Universe** - Free-camera navigation, zoom, and panning using Drei OrbitControls.  
+✓ **Handcrafted Worlds** - 6 unique celestial bodies (Nexus, Terra Earth, Forge, Ocean, Crystal Moon, Singularity).  
+✓ **Dynamic Camera** - GSAP-powered cinematic camera transitions locking smoothly onto celestial targets.  
+✓ **Particle Effects** - Thousands of instanced cosmic dust motes scattered across the volume.  
+✓ **Custom Shaders** - Highly optimized GLSL fragment/vertex shaders for lava, nebulas, and planetary atmospheres.  
+✓ **Nova AI** - OpenAI-powered streaming assistant that reacts to your current orbital sector.  
+✓ **Planet Exploration** - Deep Exploration HUD panels detailing NASA-inspired astrophysics and lore.  
+✓ **Responsive UI** - A sleek, dark-themed glassmorphism HUD built with Tailwind CSS.  
+✓ **Procedural Audio** - Ambient synthesizer drone and acoustic feedback powered by Web Audio API.  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Role |
-| :--- | :--- |
-| **Next.js 15 (App Router)** | Framework, Routing, API Endpoints |
-| **React 19** | UI Architecture, State Management |
-| **Three.js & React Three Fiber** | 3D WebGL Rendering Engine |
-| **Drei & Postprocessing** | 3D Utilities, Bloom, Vignette, Chromatic Aberration |
-| **TypeScript 5** | Type-Safe Codebase |
-| **GSAP** | High-Performance Camera & UI Animations |
-| **Framer Motion** | Declarative React UI Animations |
-| **Tailwind CSS 4** | Styling, Glassmorphism, Layouts |
-| **OpenAI AI SDK** | Nova AI Conversational Engine |
-| **Zustand** | Global Application State |
+| Domain | Technology | Role |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 15 (App Router) | Core routing, Server-side API endpoints |
+| **Language** | TypeScript 5 | Strict type-safety across components and state |
+| **Rendering** | React Three Fiber | Declarative WebGL 3D scene graph |
+| **Post-Processing** | Postprocessing / Drei | 0x MSAA Bloom, Vignette, Chromatic Aberration |
+| **Animation** | GSAP / Framer Motion | High-performance camera tweening and UI spring physics |
+| **Styling** | Tailwind CSS 4 | Atomic CSS classes and glassmorphism styling |
+| **State** | Zustand | Lightweight global state for UI toggles and camera targets |
+| **AI** | Vercel AI SDK / OpenAI | Streaming completions for the Nova AI assistant |
+| **Package Manager**| npm | Dependency resolution and scripts |
 
 ---
 
@@ -92,23 +117,24 @@ Every planet, nebula, and interactive element is generated procedurally with cus
 ```text
 src
 ├── app
-│   ├── api
-│   │   └── chat
-│   │       └── route.ts
+│   ├── api/chat/route.ts
+│   ├── error.tsx
 │   ├── globals.css
 │   ├── layout.tsx
+│   ├── loading.tsx
+│   ├── not-found.tsx
 │   └── page.tsx
 ├── components
-│   ├── audio
-│   ├── camera
-│   ├── canvas
-│   ├── celestial
-│   ├── effects
-│   ├── environment
-│   ├── garden
-│   ├── interactive
-│   ├── shaders
-│   └── ui
+│   ├── audio/
+│   ├── camera/
+│   ├── canvas/
+│   ├── celestial/
+│   ├── effects/
+│   ├── environment/
+│   ├── garden/
+│   ├── interactive/
+│   ├── shaders/
+│   └── ui/
 ├── config
 │   ├── camera.ts
 │   └── worlds.ts
@@ -116,17 +142,111 @@ src
 │   ├── gardenData.ts
 │   └── universe.json
 ├── hooks
+│   ├── useDeviceCapability.ts
+│   ├── useReducedMotion.ts
+│   └── useWorldNavigation.ts
 ├── lib
+│   ├── openai.ts
+│   ├── prompts.ts
+│   └── procedural/
 ├── shaders
+│   └── (custom .ts GLSL string files)
 ├── stores
-└── types
+│   ├── useAudioStore.ts
+│   ├── useGardenStore.ts
+│   └── useWorldStore.ts
+├── systems/
+├── types/
+└── utils/
 ```
 
 ---
 
-## 🚀 Installation
+## 🏛️ Architecture
 
-Ensure you have Node.js 18+ installed on your machine.
+* **App Router (`src/app`)**: Provides the root layout, loads standard fonts (Inter & JetBrains Mono), and mounts the Vercel AI SDK endpoint (`api/chat/route.ts`).
+* **Scene Graph (`src/components/canvas/SceneContent.tsx`)**: The root of the declarative Three.js tree. It mounts planets, lighting, post-processing, and the GSAP Cinematic Camera.
+* **React Components (`src/components/ui`)**: Traditional React DOM nodes layered *over* the canvas using `pointer-events-none` containers and framer-motion animations.
+* **State Management (`zustand`)**: Decoupled state (`useWorldStore.ts`) ensuring that updates to the UI (like selecting a planet) can drive the 3D camera without causing heavy re-renders of the WebGL canvas.
+* **Three.js / Shaders (`src/shaders`)**: Pure WebGL logic abstracted into reusable React Three Fiber materials.
+* **Nova API (`src/api/chat`)**: Utilizes Vercel's Edge-compatible AI SDK to securely stream context-aware OpenAI completions to the client.
+
+---
+
+## 🛤️ Project Walkthrough
+
+1. **Landing**
+   The application boots instantly into the WebGL canvas. An initial loading screen fades out as shaders compile and the audio context unlocks.
+   
+2. **Universe Overview**
+   The camera pulls back to reveal a sprawling starfield, procedurally generated cosmic dust, and a central glowing Nexus. Users are free to drag and rotate the cosmos.
+
+3. **World Selection**
+   Using the **Grand World Navigator** top bar, the user clicks on a planet. The GSAP-controlled camera swoops across the solar system, framing the celestial body.
+
+4. **Interaction & Deep Exploration**
+   A sleek telemetry panel opens. Users can review the lore, compare metrics, and trigger interactions (e.g., Anvil Strike, Crystal Refraction).
+
+5. **Nova AI**
+   Clicking the Nova icon opens a conversational terminal. Nova knows exactly which planet the user is orbiting and tailors her astrophysics and lore answers to the current environment.
+
+6. **Portfolio / Galactic Garden**
+   Entering the 'Garden Mode' transitions the scene from macro-planets to a stylized, micro-ecosystem detailing the creator's portfolio, achievements, and technical toolkits.
+
+---
+
+## 📊 Feature Status
+
+| Feature | Status |
+| :--- | :--- |
+| **Interactive Universe** | Completed |
+| **Custom Planet Shaders** | Completed |
+| **GSAP Camera System** | Completed |
+| **Nova AI Assistant** | Completed |
+| **Deep Exploration UI** | Completed |
+| **Procedural Audio** | Completed |
+| **World Interactions** | In Progress |
+| **Galactic Garden Mode** | In Progress |
+| **Multiplayer Tracking** | Planned |
+| **VR WebXR Support** | Planned |
+
+---
+
+## ⚡ Performance
+
+Rendering a complex multi-planet universe in the browser requires strict optimization. The following systems are actively implemented:
+
+* **Lazy Loading**: Heavy React UI overlays are dynamically imported only when required.
+* **Instancing**: Cosmic dust and starfields use `THREE.InstancedMesh` to render thousands of particles in a single draw call.
+* **Geometry Tuning**: Sphere geometries are heavily minimized (64x64 segments instead of 256x256), relying on normal maps and shaders for detail.
+* **Lighting Optimization**: Removed expensive `castShadow` passes; relying entirely on material emissives and point lights.
+* **Dynamic LOD**: Post-processing effects are disabled on low-tier devices via the `useDeviceCapability` hook.
+
+---
+
+## 🗺️ Roadmap
+
+**✅ Completed**
+- Next.js 15 & React Three Fiber Base Integration
+- Procedural Universe Generation
+- 6 Custom Hand-Coded GLSL Worlds
+- Cinematic GSAP Camera Navigation
+- Nova AI Streaming Integration
+- Deep Exploration NASA Telemetry UI
+
+**🔄 In Progress**
+- Polishing World-Specific WOW Interactions
+- Tuning Procedural Audio Synthesis Engine
+- Mobile Touch-Controls Polish
+
+**🔮 Future**
+- VR WebXR Support
+- Multiplayer Orbital Tracking
+- Expandable Cosmic Sectors (JSON driven universe generation)
+
+---
+
+## 💻 Local Development
 
 **1. Install Dependencies**
 ```bash
@@ -134,11 +254,11 @@ npm install
 ```
 *Installs all necessary packages including Next.js, Three.js, React Three Fiber, and Tailwind CSS.*
 
-**2. Start Development Server (Turbopack)**
+**2. Start Development Server**
 ```bash
 npm run dev
 ```
-*Spins up the Next.js development server on `http://localhost:3000` utilizing the blazing-fast Turbopack compiler.*
+*Spins up the Next.js development server on `http://localhost:3000` utilizing the Turbopack compiler for fast HMR.*
 
 **3. Build for Production**
 ```bash
@@ -154,134 +274,33 @@ npm start
 
 ---
 
-## 🛤️ Project Walkthrough
+## 🔐 Environment Variables
 
-1. **Landing & Initialization**
-   The application boots instantly into the WebGL canvas, displaying an auto-dismissing initialization sequence while shaders compile and audio contexts unlock.
+The project requires specific environment variables for the Nova AI to function. A `.env.example` file is provided in the repository. 
 
-2. **The Universe Overview**
-   The camera reveals a sprawling starfield with the Nexus Core at the center. Ambient lighting, cosmic dust, and post-processing effects (Bloom, Chromatic Aberration) create a cinematic atmosphere.
+Create a `.env.local` file and add the following:
 
-3. **Planet Exploration**
-   Using the **Grand World Navigator** top bar, the user selects a planet (e.g., Terra Earth, Forge Planet). The GSAP-controlled Cinematic Camera swoops across the solar system, perfectly framing the selected world.
+```env
+# Required for the Nova AI Assistant
+OPENAI_API_KEY=your_openai_or_openrouter_api_key_here
 
-4. **Deep Inspections & Interactions**
-   Upon arriving at a planet, the **Deep Exploration Panel** opens. Here, users can view NASA-inspired astrophysical spectrometry data, read the planet's lore, compare celestial metrics, and trigger WOW interactions (e.g., Anvil Strike on Forge, Ocean Dive, Crystal Refraction).
-
-5. **Nova AI Consultation**
-   At any time, clicking "Ask Nova AI" drops down an intelligent chat terminal. Nova is context-aware—if you are orbiting Terra Earth, it will suggest questions about the biosphere and its nitrogen-oxygen atmosphere.
-
-6. **The Galactic Garden & Portfolio**
-   Switching modes transitions the user from the macro-universe to the micro-garden, unlocking the Architect Portfolio Reward—a final destination where all exploration converges into the creator's core identity.
-
----
-
-## 🖼️ Screenshot Gallery
-
-### The Worlds
-![Ocean World](project_media/Ocean%20World.png)
-![The Nexus](project_media/The%20Nexus.png)
-![The Nexus (Alternate View)](project_media/The%20Nexus%20(2).png)
-
-### The Galactic Garden
-![Galactic Garden](project_media/Galactic%20Garden.png)
-![Galactic Garden Full View](project_media/Galactic%20Garden%20Full%20View.png)
-![Void Willow Sprout](project_media/Void%20Willow%20Sprout.png)
-![Nebula Orb Tendril](project_media/Nebula%20Orb%20Tendril.png)
-
-### UI & Nova AI
-![Universal Guide Nova](project_media/Universal%20Guide(Nova).png)
-![The Architect Universe](project_media/The%20Architect%20Universe.png)
-![Architect Story](project_media/Architect%20Story.png)
-![3D & AI Project](project_media/3D%20&%20AI%20Project.png)
-![Technical Toolkit](project_media/Technical%20Toolkit.png)
-![Transmission](project_media/Transmission.png)
-
----
-
-## 🏛️ Architecture
-
-* **App Router (`src/app`)**: Handles the core page layout, font injection (Inter & JetBrains Mono), and API routes for OpenAI streaming.
-* **Component Hierarchy (`src/components`)**: Separated strictly into `ui` (React DOM overlays) and `canvas` / `celestial` / `environment` (React Three Fiber 3D elements).
-* **Three.js Scene (`src/components/canvas/SceneContent.tsx`)**: The root of the WebGL tree, managing the space lighting, procedural universe, interactive worlds, and garden mode.
-* **React State (`zustand`)**: `useWorldStore.ts` and `useGardenStore.ts` manage global discovery metrics, camera targets, and UI visibility without triggering massive re-renders.
-* **Nova API (`src/api/chat`)**: Utilizes Vercel AI SDK to stream OpenAI responses directly into the conversational UI overlay.
-* **Rendering Pipeline (`src/components/canvas/SceneEffects.tsx`)**: Integrates `@react-three/postprocessing` with optimized 0x MSAA Bloom and Vignette passes to guarantee high frame rates.
-
----
-
-## 📊 Current Implementation Status
-
-| Component | Progress | Status |
-| :--- | :--- | :--- |
-| **Universe & Environment** | ██████████ 100% | Complete |
-| **Planets & Shaders** | ██████████ 100% | Complete |
-| **Camera & Navigation** | ██████████ 100% | Complete |
-| **Nova AI Assistant** | ██████████ 100% | Complete |
-| **World Interactions** | ████████░░ 80% | Polishing |
-| **Galactic Garden** | ████████░░ 80% | Polishing |
-| **Performance Tuning** | █████████░ 90% | Highly Optimized |
-
----
-
-## 🗺️ Roadmap
-
-**✅ Completed**
-- Base Next.js 15 & R3F Integration
-- Procedural Universe Generation
-- 6 Custom Hand-Coded GLSL Worlds
-- Cinematic GSAP Camera Navigation
-- Nova AI Streaming Integration
-- Deep Exploration NASA Telemetry UI
-
-**🔄 In Progress**
-- Polishing World-Specific WOW Interactions
-- Tuning Procedural Audio Synthesis Engine
-- Mobile Touch-Controls Polish
-
-**🔮 Future**
-- VR WebXR Support
-- Multiplayer Orbital Tracking (See other visitors)
-- Expandable Cosmic Sectors (JSON driven universe expansion)
-
----
-
-## ⚡ Performance
-
-Rendering a multi-planet universe in a browser requires extreme optimization:
-* **Lazy Loading**: Heavy UI components and specific planetary interactions are dynamically imported.
-* **GPU Rendering**: Utilizing raw GLSL shaders rather than heavy textures reduces memory footprint.
-* **Geometry Tuning**: Sphere geometries are heavily optimized (64x64 segments instead of 256x256).
-* **Lighting/Shadows**: Removed expensive castShadow passes in deep space; relying on material emissives and point lights.
-* **Target FPS**: Strictly architected to maintain **60 FPS** on mid-tier hardware and **120 FPS** on high-end devices.
-
----
-
-## 🌟 Why This Project Stands Out
-
-Most 3D websites use 3D as a gimmick—a floating object next to text. **The Architect of Worlds** uses 3D as the *entire storytelling medium*. 
-The creative direction treats the visitor like an astronaut arriving in a new solar system. The blend of modern web technologies (Next.js, Tailwind) with hardcore graphics programming (GLSL, Three.js) creates an immersive experience that commands curiosity, evokes emotion, and perfectly bridges the gap between software engineering and digital art.
-
----
-
-## 🎮 Demo
-
-> **Live Demo:** [TBA - Deploying Soon]()
-> 
-> **Demo Video:** [Placeholder for YouTube/Vimeo link]()
-
-*(Note: Ensure you have hardware acceleration enabled in your browser for the best experience.)*
+# Optional: Override the base URL if using a service like OpenRouter
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+```
 
 ---
 
 ## 🤝 Contributing
 
 We welcome contributions from graphics programmers, UI engineers, and storytellers!
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+Please ensure you run `npm run lint` and `npm run build` before opening a PR.
 
 ---
 
